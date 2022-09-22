@@ -39,6 +39,7 @@ public class ArrayBox<T> extends AbstractBox<T>{
 
 
     //获取有效元素的个数
+    @Override
     public int size(){
         return size;
     }
@@ -51,6 +52,7 @@ public class ArrayBox<T> extends AbstractBox<T>{
     //设计一个方法，可以添加元素
     //  是否需要提供一些条件-----------参数     需要存储的那个数据
     //  是否需要留下一个结果-----------返回值    是否存储成功
+    @Override
     public boolean add(T element){
         //要做一个严谨的判断
         //确保数组一定有小格子
@@ -62,7 +64,8 @@ public class ArrayBox<T> extends AbstractBox<T>{
         return true;
     }
     //设计一个add重载，element，index
-    public void add(int index,T element){
+    @Override
+    public void add(int index, T element){
         //1.确保有容量
         //2.从size----index倒叙，向后移动覆盖，前面index位置空出来
         //3.element存入index位置
@@ -71,6 +74,7 @@ public class ArrayBox<T> extends AbstractBox<T>{
     //设计一个方法，可以获取元素
     //  是否需要提供条件    参数      位置--1(索引)
     //  是否需要留下结果    返回值    找到的那个元素--int
+    @Override
     public T get(int index){
         //先做一个index范围的检测---找小弟
         this.rangeCheck(index);
@@ -85,6 +89,7 @@ public class ArrayBox<T> extends AbstractBox<T>{
     //                  index--2    size--6
     //                  10,20,40,50,60,0        size减少一个，人为的将最后的60改为0
     //  参数--index  返回值--删掉的那个旧元素
+    @Override
     public T remove(int index){
         //1.调用检测index范围的方法
         this.rangeCheck(index);

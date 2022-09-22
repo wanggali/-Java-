@@ -19,7 +19,8 @@ public class LinkedBox<T> extends AbstractBox<T>{
     }
 
     //设计一个方法，存储元素，向指定位置
-    public void add(int index,T element){
+    @Override
+    public void add(int index, T element){
 
     }
 
@@ -47,6 +48,7 @@ public class LinkedBox<T> extends AbstractBox<T>{
     }
 
     //设计一个方法，获取有效元素的个数
+    @Override
     public int size(){
         return size;
     }

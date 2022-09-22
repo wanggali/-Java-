@@ -19,18 +19,22 @@ public abstract class AbstractBox<T> implements Box<T>{
     //主要
     public abstract T remove(int index);
     //主要
+    @Override
     public int size(){
         return size;
     }
 
 
-    public void add(int index,T element){
+    @Override
+    public void add(int index, T element){
         throw new NuSupportedOperationException();
     }
+    @Override
     public void addAll(Box<T> box){
         throw new NuSupportedOperationException();
     }
-    public void addAll(int index,Box<T> box){
+    @Override
+    public void addAll(int index, Box<T> box){
         throw new NuSupportedOperationException();
     }
 
