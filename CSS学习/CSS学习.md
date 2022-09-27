@@ -118,3 +118,18 @@
   * margin外边距
   * boder边框
   * padding内边距
+  * boder-redis圆角边框
+  * 盒子阴影 box-shadow
+
+* 浮动
+
+  * 块级元素
+  * 行内元素
+  * block块元素
+  * inline-block行内块元素
+  * float浮动
+  * clear
+    * right右侧不允许浮动
+    * left左侧不允许浮动
+    * both两侧不允许浮动
+  * 
