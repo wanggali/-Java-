@@ -124,12 +124,52 @@
 * 浮动
 
   * 块级元素
+  
   * 行内元素
+  
   * block块元素
+  
   * inline-block行内块元素
+  
   * float浮动
+  
   * clear
     * right右侧不允许浮动
     * left左侧不允许浮动
     * both两侧不允许浮动
-  * 
+    
+  * overflow
+  
+    * 滚动条
+  
+    * hidden隐藏
+  
+    * scoll滚动条
+  
+    * 父级边框塌陷问题
+  
+      * 浮动元素后面增加div
+  
+      * 设置父元素高度
+  
+      * overflow
+  
+      * 父类中添加一个伪类(推荐使用)
+  
+        ```css
+        #father:after{
+            content:''
+            display:block
+            clear:both
+        }
+        ```
+  
+  * 定位
+  
+    * 相对定位
+      * relative
+      * top，left，right，bottom
+      * 原来的位置会被保留
+    * 绝对定位
+      * 
+    * z-index
